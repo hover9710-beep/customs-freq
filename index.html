@@ -7,6 +7,7 @@
 *{box-sizing:border-box}body{margin:0;font-family:"맑은 고딕","Malgun Gothic",system-ui,sans-serif;background:var(--bg);color:#1b2430}
 header{background:var(--navy);color:#fff;padding:16px 16px 10px;position:sticky;top:0;z-index:5}
 h1{margin:0;font-size:19px}.sub{font-size:12px;opacity:.8;margin-top:3px}
+.total{font-size:13px;font-weight:700;margin-top:6px;color:#ffd98a}
 .tabs{display:flex;gap:6px;margin-top:12px}
 .tab{flex:1;padding:9px 6px;border:0;border-radius:8px 8px 0 0;background:#33507a;color:#cfe0f2;font-size:15px;font-weight:700;cursor:pointer}
 .tab.on{background:var(--card);color:var(--navy)}
@@ -27,11 +28,16 @@ li input[type=checkbox]{width:22px;height:22px;margin-top:2px;flex:none}
 .grp{font-size:12px;color:var(--gray)}
 .freq{margin-left:auto;font-weight:800;color:var(--crim);font-size:15px;white-space:nowrap}
 .det{font-size:12px;color:var(--gray);margin-top:4px;line-height:1.5;word-break:break-all}
+.star{flex:none;background:none;border:0;font-size:22px;line-height:1;cursor:pointer;color:#b8c2cf;padding:0 2px}
+.star.on{color:#e0a800}
+.btn{padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:inherit;font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap}
+.btn.on{background:var(--crim);border-color:var(--crim);color:#fff}
 .empty{text-align:center;color:var(--gray);padding:40px 12px}
 </style></head><body>
 <header>
 <h1>관세사 1차 · 출제빈도 탐색기</h1>
 <div class="sub">기출 29~43회 · 어느 조문이 몇 번 나왔나 → 빈출부터 공부</div>
+<div class="total" id="total"></div>
 <div class="tabs" id="tabs"></div>
 </header>
 <div class="ctrl">
@@ -39,6 +45,11 @@ li input[type=checkbox]{width:22px;height:22px;margin-top:2px;flex:none}
 <select id="grp"></select>
 <select id="sort"><option value="f">빈도순</option><option value="a">조문순</option></select>
 <label style="font-size:13px;display:flex;align-items:center;gap:4px"><input type="checkbox" id="todo" style="width:16px;height:16px">미완료만</label>
+<label style="font-size:13px;display:flex;align-items:center;gap:4px"><input type="checkbox" id="staronly" style="width:16px;height:16px">★만 보기</label>
+<button class="btn" id="today">📌 오늘 볼 20개</button>
+<button class="btn" id="exp" title="진도·별표를 JSON 파일로 저장">⬇ 내보내기</button>
+<button class="btn" id="imp" title="JSON 파일에서 진도·별표 복원">⬆ 가져오기</button>
+<input type="file" id="impfile" accept=".json,application/json" hidden>
 </div>
 <div class="prog"><span id="pt"></span><div class="bar"><i id="pi"></i></div></div>
 <ul id="list"></ul>
@@ -47,30 +58,55 @@ const DATA={"무역영어": [{"g": "CISG 국제물품매매협약", "a": "제1�
 const SUBS=Object.keys(DATA);
 let cur=SUBS[0];
 const done=JSON.parse(localStorage.getItem('cq_done')||'{}');
+const star=JSON.parse(localStorage.getItem('cq_star')||'{}');
 const key=(s,d)=>s+'|'+d.g+'|'+d.a;
 const tabs=document.getElementById('tabs');
 SUBS.forEach(s=>{const b=document.createElement('button');b.className='tab'+(s==cur?' on':'');b.textContent=s;b.onclick=()=>{cur=s;[...tabs.children].forEach(x=>x.classList.toggle('on',x.textContent==s));fillGrp();render()};tabs.appendChild(b)});
-const q=document.getElementById('q'),grp=document.getElementById('grp'),sort=document.getElementById('sort'),todo=document.getElementById('todo'),list=document.getElementById('list');
-[q,grp,sort,todo].forEach(e=>e.addEventListener('input',render));
+const q=document.getElementById('q'),grp=document.getElementById('grp'),sort=document.getElementById('sort'),todo=document.getElementById('todo'),staronly=document.getElementById('staronly'),list=document.getElementById('list');
+[q,grp,sort,todo,staronly].forEach(e=>e.addEventListener('input',render));
+let todayMode=false;const todayBtn=document.getElementById('today');
+todayBtn.onclick=()=>{todayMode=!todayMode;todayBtn.classList.toggle('on',todayMode);render()};
 function fillGrp(){const gs=[...new Set(DATA[cur].map(d=>d.g))].sort();grp.innerHTML='<option value="">전체 그룹</option>'+gs.map(g=>`<option>${g}</option>`).join('')}
 function render(){
  let arr=DATA[cur].slice();
+ if(todayMode)arr=arr.filter(d=>!done[key(cur,d)]).sort((a,b)=>b.f-a.f||a.g.localeCompare(b.g)).slice(0,20);
  const kw=q.value.trim(),gf=grp.value;
  if(gf)arr=arr.filter(d=>d.g==gf);
  if(kw)arr=arr.filter(d=>(d.a+' '+d.g+' '+d.d).includes(kw));
  if(todo.checked)arr=arr.filter(d=>!done[key(cur,d)]);
- arr.sort(sort.value=='f'?(a,b)=>b.f-a.f||a.g.localeCompare(b.g):(a,b)=>a.g.localeCompare(b.g)||a.a.localeCompare(b.a,'ko',{numeric:true}));
+ if(staronly.checked)arr=arr.filter(d=>star[key(cur,d)]);
+ if(!todayMode)arr.sort(sort.value=='f'?(a,b)=>b.f-a.f||a.g.localeCompare(b.g):(a,b)=>a.g.localeCompare(b.g)||a.a.localeCompare(b.a,'ko',{numeric:true}));
  const tot=DATA[cur].length,dn=DATA[cur].filter(d=>done[key(cur,d)]).length;
- document.getElementById('pt').textContent=`완료 ${dn} / ${tot}  (${tot?Math.round(dn/tot*100):0}%) · 표시 ${arr.length}건`;
+ document.getElementById('pt').textContent=`완료 ${dn} / ${tot}  (${tot?Math.round(dn/tot*100):0}%) · 표시 ${arr.length}건${todayMode?' · 📌 오늘 볼 20개(미완료 빈출순)':''}`;
+ let T=0,D=0;for(const s of SUBS){T+=DATA[s].length;D+=DATA[s].filter(d=>done[key(s,d)]).length}
+ document.getElementById('total').textContent=`전체 3과목 진도: ${D} / ${T} (${T?Math.round(D/T*100):0}%)`;
  document.getElementById('pi').style.width=(tot?dn/tot*100:0)+'%';
  list.innerHTML = arr.length? '' : '<div class="empty">해당 항목이 없어요</div>';
  for(const d of arr){
   const li=document.createElement('li');const k=key(cur,d);const ck=!!done[k];if(ck)li.className='done';
-  li.innerHTML=`<input type=checkbox ${ck?'checked':''}><div class=mid><div class=top><span class=art></span><span class=grp></span><span class=freq>${d.f}회</span></div><div class=det></div></div>`;
+  li.innerHTML=`<input type=checkbox ${ck?'checked':''}><div class=mid><div class=top><span class=art></span><span class=grp></span><span class=freq>${d.f}회</span></div><div class=det></div></div><button class="star${star[k]?' on':''}" title="별표">${star[k]?'★':'☆'}</button>`;
   li.querySelector('.art').textContent=d.a;li.querySelector('.grp').textContent=d.g;li.querySelector('.det').textContent=d.d;
   li.querySelector('input').onchange=e=>{if(e.target.checked)done[k]=1;else delete done[k];localStorage.setItem('cq_done',JSON.stringify(done));render()};
+  li.querySelector('.star').onclick=()=>{if(star[k])delete star[k];else star[k]=1;localStorage.setItem('cq_star',JSON.stringify(star));render()};
   list.appendChild(li);
  }
 }
+document.getElementById('exp').onclick=()=>{
+ const blob=new Blob([JSON.stringify({cq_done:done,cq_star:star},null,1)],{type:'application/json'});
+ const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='customs-freq-진도-'+new Date().toLocaleDateString('sv')+'.json';
+ document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),1000)};
+const impFile=document.getElementById('impfile');
+document.getElementById('imp').onclick=()=>impFile.click();
+impFile.onchange=async()=>{
+ const f=impFile.files[0];impFile.value='';if(!f)return;
+ try{
+  const o=JSON.parse(await f.text());const ok=v=>v&&typeof v=='object'&&!Array.isArray(v);
+  if(!ok(o)||!ok(o.cq_done)||(o.cq_star!==undefined&&!ok(o.cq_star)))throw new Error('형식이 맞지 않아요');
+  for(const [obj,src,name] of [[done,o.cq_done,'cq_done'],[star,o.cq_star||{},'cq_star']]){Object.keys(obj).forEach(k=>delete obj[k]);for(const k in src)if(src[k])obj[k]=1;localStorage.setItem(name,JSON.stringify(obj))}
+  render();alert(`복원 완료: 완료 ${Object.keys(done).length}개 · 별표 ${Object.keys(star).length}개`);
+ }catch(e){alert('가져오기 실패: '+e.message)}
+};
 fillGrp();render();
+const ctrlEl=document.querySelector('.ctrl'),hdr=document.querySelector('header');
+const fixTop=()=>{ctrlEl.style.top=hdr.offsetHeight+'px'};fixTop();addEventListener('resize',fixTop);
 </script></body></html>
