@@ -5203,6 +5203,526 @@ const QDATA = {
   "ans": 2,
   "why": ""
  },
+ "38-41": {
+  "q": "국제물품매매계약에 관한 유엔협약(CISG, 1980) 제20조에 관한 내용이다. ( )에 들어갈 용어를 순서대로 바르게 나열한 것은?",
+  "passage": "Official holidays or non-business days occurring during the period for acceptance are ( ) in calculating the period. However, if a notice of acceptance cannot be delivered at the address of the offeror on the ( ) day of the period because that day falls on an official holiday or a non-business day at the place of business of the ( ), the period is extended until the first business day which follows.",
+  "opts": [
+   "① included - first - offeree",
+   "② included - last - offeror",
+   "③ excluded - first - offeree",
+   "④ excluded - first - offeror",
+   "⑤ excluded - last - offeror"
+  ],
+  "ans": 2,
+  "why": ""
+ },
+ "38-42": {
+  "q": "국제물품매매계약에 관한 유엔협약(CISG, 1980) 제39조에 관한 내용이다. ( )에 들어갈 용어를 순서대로 바르게 나열한 것은?",
+  "passage": "○ The buyer loses the right to rely on a lack of conformity of the goods if he does not give notice to the seller specifying the nature of the lack of conformity within ( ) after he has discovered it or ought to have discovered it.\n○ In any event, the buyer loses the right to rely on a lack of conformity of the goods if he does not give the seller notice thereof at the latest within ( ) from the date on which the goods were actually handed over to the buyer, unless this time-limit is ( ) with a contractual period of guarantee.",
+  "opts": [
+   "① a reasonable time - a period of two years - inconsistent",
+   "② a reasonable time - a period of three years - consistent",
+   "③ a period of two years - a reasonable time - consistent",
+   "④ a period of three years - a reasonable time - consistent",
+   "⑤ a period of three years - a reasonable time - inconsistent"
+  ],
+  "ans": 1,
+  "why": ""
+ },
+ "38-43": {
+  "q": "국제물품매매계약에 관한 유엔협약(CISG, 1980) 제57조에 관한 내용이다. 밑줄 친 부분이 옳지 않은 것은?",
+  "passage": "○ If the buyer is not bound to pay the price at any other particular place, he must pay it to the seller\n(a) ①at the buyer's place of business; or\n(b) if the payment is to be made against the handing over of the goods or of documents, ②at the place where the handing over takes place.\n○ ③The seller must bear any increase in the expenses ④incidental to payment which is caused by a change in his place of business subsequent to ⑤the conclusion of the contract.",
+  "opts": [
+   "① at the buyer's place of business",
+   "② at the place where the handing over takes place",
+   "③ The seller",
+   "④ incidental to payment",
+   "⑤ the conclusion of the contract"
+  ],
+  "ans": 1,
+  "why": ""
+ },
+ "38-44": {
+  "q": "국제물품매매계약에 관한 유엔협약(CISG, 1980) 제32조 및 제33조에 관한 내용이다. ( )에 들어갈 용어를 순서대로 바르게 나열한 것은?",
+  "passage": "○ If the seller, in accordance with the contract or this Convention, hands the goods over to ( ) and if the goods are not clearly identified to the contract by markings on the goods, by shipping documents or otherwise, the seller ( ) give the buyer notice of the consignment specifying the goods.\n○ The seller must deliver the goods -\n(a) if a date is fixed by or determinable from the contract, on that date;\n(b) if a period of time is fixed by or determinable from the contract, at any time within that period unless circumstances indicate that ( ) is to choose a date; or\n(c) in any other case, within a reasonable time after the conclusion of the contract.",
+  "opts": [
+   "① a carrier - need not - the buyer",
+   "② a carrier - must - the seller",
+   "③ a carrier - must - the buyer",
+   "④ a buyer - need not - the seller",
+   "⑤ a buyer - must - the seller"
+  ],
+  "ans": 3,
+  "why": ""
+ },
+ "38-45": {
+  "q": "국제물품매매계약에 관한 유엔협약(CISG, 1980) 제18조에 관한 내용이다. 밑줄 친 부분이 옳지 않은 것은?",
+  "passage": "○ An acceptance of an offer becomes effective at the moment the indication of assent reaches the offeror. An acceptance is not effective if the indication of assent does not reach the offeror within the time he has fixed or, if no time is fixed, ①within a reasonable time, due account being taken of the circumstances of the transaction, including the rapidity of the means of communication employed by ②the offeror. An oral offer ③cannot be accepted unless the circumstances indicate otherwise.\n○ However, if, by virtue of the offer or as a result of practices which the parties have established between themselves or of usage, ④the offeree may indicate assent by performing an act, such as one relating to the dispatch of the goods or payment of the price, ⑤without notice to the offeror, the acceptance is effective at the moment the act is performed, provided that the act is performed within the period of time laid down in the preceding paragraph.",
+  "opts": [
+   "① within a reasonable time",
+   "② the offeror",
+   "③ cannot be accepted",
+   "④ the offeree",
+   "⑤ without notice to the offeror"
+  ],
+  "ans": 3,
+  "why": ""
+ },
+ "38-46": {
+  "q": "영국해상보험법 (MIA, 1906) 제26조 및 제27조에 관한 설명으로 옳은 것을 모두 고른 것은?",
+  "passage": "ㄱ. The subject-matter insured must be designated in a marine policy with reasonable certainty.\nㄴ. The nature and extent of the interest of the assured in the subject-matter insured must be specified in the policy.\nㄷ. Where the policy designates the subject-matter insured in general terms, it shall be construed to apply to the interest intended by the assured to be covered.\nㄹ. Unless the policy otherwise provides, the value fixed by the policy is conclusive for the purpose of determining whether there has been a constructive total loss.",
+  "opts": [
+   "① ㄱ,ㄴ",
+   "② ㄱ,ㄷ",
+   "③ ㄴ,ㄷ",
+   "④ ㄴ,ㄹ",
+   "⑤ ㄷ,ㄹ"
+  ],
+  "ans": 2,
+  "why": ""
+ },
+ "38-47": {
+  "q": "국제물품매매계약에 관한 유엔협약(CISG, 1980) 제74조, 제75조, 제76조에 관한 내용이다. ( )에 들어갈 용어를 순서대로 바르게 나열한 것은?",
+  "passage": "○ Damages for breach of contract by one party consist of a sum equal to the loss, including loss of profit, suffered by the other party as a consequence of the breach. Such damages ( ) exceed the loss which the party in breach foresaw or ought to have foreseen at the time of the conclusion of the contract, in the light of the facts and matters of which he then knew or ought to have known, as a possible consequence of the breach of contract.\n○ If the contract is avoided and if, in a reasonable manner and within a reasonable time after avoidance, the buyer has bought goods in replacement or the seller has resold the goods, the party claiming damages ( ) recover the difference between the contract price and the price in the substitute transaction as well as any further damages recoverable under article 74.\n○ If the contract is avoided and there is a current price for the goods, the party claiming damages ( ), if he has not made a purchase or resale under article 75, recover the difference between the price fixed by the contract and the current price at the time of avoidance as well as any further damages recoverable under article 74.",
+  "opts": [
+   "① may - may - may not",
+   "② may - may not - may",
+   "③ may not - may - may",
+   "④ may not - may - may not",
+   "⑤ may not - may not - may"
+  ],
+  "ans": 3,
+  "why": ""
+ },
+ "38-48": {
+  "q": "외국중재판정의 승인 및 집행에 관한 유엔협약(뉴욕협약, 1958) 제3조에 관한 내용이다. ( )에 들어갈 용어를 순서대로 바르게 나열한 것은?",
+  "passage": "Each Contracting State shall recognize arbitral awards as ( ) and enforce them in accordance with the rules of procedure of the territory where the award is relied upon, under the conditions laid down in the following articles. There shall not be imposed substantially more onerous conditions or ( ) fees or charges on the recognition or enforcement of arbitral awards to which this Convention applies than are imposed on the recognition or enforcement of ( ) arbitral awards.",
+  "opts": [
+   "① binding - higher - domestic",
+   "② binding - higher - foreign",
+   "③ binding - lower - domestic",
+   "④ non-binding - higher - foreign",
+   "⑤ non-binding - lower - domestic"
+  ],
+  "ans": 1,
+  "why": ""
+ },
+ "38-49": {
+  "q": "외국중재판정의 승인 및 집행에 관한 유엔협약(뉴욕협약, 1958)에 관한 설명으로 옳은 것을 모두 고른 것은?",
+  "passage": "ㄱ. The term \"arbitral awards\" shall include not only awards made by arbitrators appointed for each case but also those made by permanent arbitral bodies to which the parties have submitted.\nㄴ. The term \"agreement in writing\" shall include an arbitral clause in a contract or an arbitration agreement, signed by the parties or contained in an exchange of letters or telegrams.\nㄷ. Each Contracting State shall not recognize an agreement in writing under which the parties undertake to submit to arbitration all or any differences which have arisen or which may arise between them in respect of a defined legal relationship, whether contractual or not, concerning a subject matter capable of settlement by arbitration.\nㄹ. Recognition and enforcement of an arbitral award must be refused if the competent authority in the country where recognition and enforcement is sought finds that the subject matter of the difference is capable of settlement by arbitration under the law of that country.",
+  "opts": [
+   "① ㄱ,ㄴ",
+   "② ㄱ,ㄹ",
+   "③ ㄴ,ㄷ",
+   "④ ㄴ,ㄹ",
+   "⑤ ㄷ,ㄹ"
+  ],
+  "ans": 1,
+  "why": ""
+ },
+ "38-50": {
+  "q": "해상화물운송장에 관한 CMI 통일규칙(CMI Uniform Rules for Sea Waybills, 1990)에 관한 내용으로 옳지 않은 것은?",
+  "passage": "",
+  "opts": [
+   "① \"Contract of carriage\" shall mean any contract of carriage subject to these Rules which is to be performed wholly or partly by sea.",
+   "② These Rules shall be called the \"CMI Uniform Rules for Sea Waybills\". They shall apply when adopted by a contract of carriage which is not covered by a bill of lading or similar document of title, whether the contract be in writing or not.",
+   "③ The consignee warrants the accuracy of the particulars furnished by him relating to the goods, and shall indemnify the carrier against any loss, damage or expense resulting from any inaccuracy.",
+   "④ The carrier shall deliver the goods to the consignee upon production of proper identification.",
+   "⑤ The carrier shall be under no liability for wrong delivery if he can prove that he has exercised reasonable care to ascertain that the party claiming to be the consignee is in fact that party."
+  ],
+  "ans": 3,
+  "why": ""
+ },
+ "38-51": {
+  "q": "국제물품복합운송에 관한 유엔협약(MT조약, 1980) 제26조, 제27조에 관한 설명으로 옳지 않은 것은?",
+  "passage": "",
+  "opts": [
+   "① The provisions of Article 26 do not constitute an obstacle to the jurisdiction of the Contracting States for provisional or protective measures.",
+   "② The arbitrator or arbitration tribunal shall apply the provisions of this Convention.",
+   "③ An agreement made by the parties after a claim has arisen, which designates the place where the plaintiff may institute an action, shall be effective.",
+   "④ The arbitration proceedings shall, at the option of the defendant, be instituted at any other place designated for that purpose in the arbitration clause or agreement.",
+   "⑤ Nothing in Article 27 shall affect the validity of an agreement on arbitration made by the parties after the claim relating to the international multimodal transport has arisen."
+  ],
+  "ans": 4,
+  "why": ""
+ },
+ "38-52": {
+  "q": "영국해상보험법 (MIA, 1906) 제70조에 관한 설명이다. ( )에 들어갈 용어를 순서대로 바르게 나열한 것은?",
+  "passage": "Subject to any express provision in the policy, where there is a partial loss of freight, the measure of ( ) is such proportion of the sum fixed by the policy in the case of ( ), or of the insurable value in the case of ( ), as the proportion of freight lost by the assured bears to the whole freight at the risk of the assured under the policy.",
+  "opts": [
+   "① indemnity - a valued policy - an unvalued policy",
+   "② indemnity - an unvalued policy - a valued policy",
+   "③ abandonment - a valued policy - a valued policy",
+   "④ abandonment - a valued policy - an unvalued policy",
+   "⑤ abandonment - an unvalued policy - a valued policy"
+  ],
+  "ans": 1,
+  "why": ""
+ },
+ "38-53": {
+  "q": "선하증권에 관한 법규의 통일을 위한 국제협약(Hague Rules, 1924) 제4조에 관한 설명 중 운송인이나 선박의 면책내용이 아닌 것은?",
+  "passage": "",
+  "opts": [
+   "① Latent defects not discoverable by due diligence",
+   "② Wastage in bulk or weight or any other loss or damage arising from inherent defect, quality or vice of the goods",
+   "③ Perils, dangers and accidents of the sea or other navigable waters",
+   "④ Fire caused by the actual fault or privity of the carrier",
+   "⑤ Strikes or lockouts or stoppage or restraint of labour from whatever cause, whether partial or general"
+  ],
+  "ans": 4,
+  "why": ""
+ },
+ "38-54": {
+  "q": "국제물품복합운송에 관한 유엔협약(MT조약, 1980) 제14조에 관한 내용이다. ( )에 들어갈 용어를 순서대로 바르게 나열한 것은?",
+  "passage": "O For the purpose of this article, the multimodal transport operator is deemed to be in charge of the goods:\n(a) from the time he has taken over the goods from:\n(i) the ( ) or a person acting on his behalf; or\n(ii) an authority or other third party to whom, pursuant to law or regulations applicable at the place of ( ), the goods must be ( ) for transport",
+  "opts": [
+   "① consignor - taking in charge - handed over",
+   "② consignor - dispatch - on board",
+   "③ consignor - dispatch - handed over",
+   "④ consignee - taking in charge - handed over",
+   "⑤ consignee - dispatch - on board"
+  ],
+  "ans": 1,
+  "why": ""
+ },
+ "38-55": {
+  "q": "선하증권에 관한 법규의 통일을 위한 국제협약(Hague Rules, 1924) 제1조의 정의가 옳지 않은 것은?",
+  "passage": "",
+  "opts": [
+   "① \"Carrier\" includes the owner or the charterer who enters into a contract of carriage with a shipper.",
+   "② \"Ship\" means any vessel used for the carriage of goods by sea.",
+   "③ \"Carriage of goods\" covers the period from the time when the goods are loaded on to the time they are discharged from the ship.",
+   "④ \"Contract of carriage\" applies only to contracts of carriage covered by a bill of lading or any similar document of title, in so far as such document relates to the carriage of goods by any modes of transport.",
+   "⑤ \"Goods\" includes goods, wares, merchandise and articles of every kind whatsoever except live animals and cargo which by the contract of carriage in stated as being carried on deck and is so carried."
+  ],
+  "ans": 4,
+  "why": ""
+ },
+ "38-56": {
+  "q": "협회적하약관(Institute Cargo Clauses, 2009) ICC(C)에서 담보하는 위험을 모두 고른 것은?",
+  "passage": "ㄱ. vessel or craft being stranded grounded sunk or capsized\nㄴ. overturning or derailment of land conveyance\nㄷ. discharge of cargo at a port of distress\nㄹ. earthquake volcanic eruption or lightning\nㅁ. general average sacrifice\nㅂ. washing overboard\nㅅ. entry of sea lake or river water into vessel craft hold conveyance container or place of storage",
+  "opts": [
+   "① ㄱ,ㄴ,ㄷ,ㄹ",
+   "② ㄱ,ㄴ,ㄷ,ㅁ",
+   "③ ㄴ,ㄷ,ㅁ,ㅂ",
+   "④ ㄷ,ㄹ,ㅁ,ㅅ",
+   "⑤ ㄷ,ㄹ,ㅂ,ㅅ"
+  ],
+  "ans": 2,
+  "why": ""
+ },
+ "38-57": {
+  "q": "화환신용장통일규칙(UCP 600) 제4조에 관한 내용으로 옳은 것은?",
+  "passage": "",
+  "opts": [
+   "① A contract by its nature is an incorporate transaction from the sale or other credit on which it may be based.",
+   "② Banks are in no way concerned with or bound by such credit, even if any reference whatsoever to it is included in the contract.",
+   "③ Consequently, the undertaking of a bank to honour, to negotiate or to fulfil any other obligation under the credit is not subject to claims or defences by the beneficiary resulting from its relationships with the advising bank or the applicant.",
+   "④ A beneficiary can in no case avail itself of the contractual relationships existing between banks or between the applicant and the issuing bank.",
+   "⑤ An issuing bank should discourage any attempt by the applicant to include, as an integral part of the contract, copies of the underlying credit, pro forma invoice and the like."
+  ],
+  "ans": 4,
+  "why": ""
+ },
+ "38-58": {
+  "q": "IncotermsⓇ 2020 규칙에서 변경된 사항이 아닌 것은?",
+  "passage": "",
+  "opts": [
+   "① Bills of lading with an on-board notation and the FCA IncotermsⓇ rule",
+   "② Costs, where they are listed",
+   "③ Different levels of insurance cover in CIF and CIP",
+   "④ Change in the three-letter initials for DDT to DPU",
+   "⑤ Inclusion of security-related requirements within carriage obligations and costs"
+  ],
+  "ans": 4,
+  "why": ""
+ },
+ "38-59": {
+  "q": "협회적하약관(Institute Cargo Clauses, 2009) ICC(B) 제13조에 관한 내용이다. ( )에 들어갈 용어로 옳게 나열된 것은?",
+  "passage": "No claim for ( ㄱ ) shall be recoverable hereunder unless the ( ㄴ ) is reasonably ( ㄷ ) either on account of its ( ㄹ ) appearing to be unavoidable or because the cost of recovering, reconditioning and forwarding the ( ㅁ ) to the destination to which it is insured would exceed its value on arrival.",
+  "opts": [
+   "① ㄱ. actual total loss - ㄷ. subrogated",
+   "② ㄱ. actual total loss - ㅁ. subject-matter insured",
+   "③ ㄴ. subject-matter insured - ㄷ. abandoned",
+   "④ ㄴ. subject-matter insured - ㄹ. constructive total loss",
+   "⑤ ㄷ. subrogated - ㄹ. actual total loss"
+  ],
+  "ans": 3,
+  "why": ""
+ },
+ "38-60": {
+  "q": "무역클레임의 회신 서한의 일부이다. 내용을 순서대로 바르게 연결한 것은?",
+  "passage": "Dear Mr. Kim,\nㄱ. Upon investigating, however, we found that the shipping company did not ship the products actually by mistake and they are still placed at a port in Busan.\nㄴ. We suggest, therefore, that you file a claim with the shipping company first to settle the matter and with the insurance company as marine insurance is covered against non-delivery of the goods.\nㄷ. We are sorry to learn from your letter of March 20 that our shipment of your order No.100 has not reached yet.\nㄹ. We took our every efforts to fulfil your order and there is no doubt that the products were on board the ship in perfect condition based on the clean on board bill of lading made out to order of the issuing bank.\nVery truly yours,",
+  "opts": [
+   "① ㄱ-ㄴ-ㄷ-ㄹ",
+   "② ㄱ-ㄷ-ㄹ-ㄴ",
+   "③ ㄴ-ㄷ-ㄱ-ㄹ",
+   "④ ㄷ-ㄴ-ㄹ-ㄱ",
+   "⑤ ㄷ-ㄹ-ㄱ-ㄴ"
+  ],
+  "ans": 5,
+  "why": ""
+ },
+ "38-61": {
+  "q": "화환신용장통일규칙(UCP 600) 제30조에 관한 내용이다. ( )에 들어갈 내용을 순서대로 바르게 나열한 것은?",
+  "passage": "The words \"( )\" or \"approximately\" used in connection with the amount of the credit or the quantity or the unit price stated in the credit are to be construed as allowing a tolerance not to exceed ( )% more or ( )% less than the amount, the quantity or the unit price to which they refer.\nA tolerance not to exceed ( )% more or ( )% less than the quantity of the goods is allowed, provided the credit does not state the quantity in terms of a stipulated number of packing units or individual items and the total amount of the drawings does not exceed the amount of the credit.",
+  "opts": [
+   "① almost - 5 - 5 - 10 - 10",
+   "② about - 10 - 10 - 5 - 5",
+   "③ about - 5 - 5 - 10 - 10",
+   "④ on or about - 10 - 5 - 10 - 5",
+   "⑤ on or about - 10 - 10 - 5 - 5"
+  ],
+  "ans": 2,
+  "why": ""
+ },
+ "38-62": {
+  "q": "화환신용장통일규칙(UCP 600) 제20조에 관한 내용으로 옳지 않은 것은?",
+  "passage": "",
+  "opts": [
+   "① The date of issuance of the bill of lading will be deemed to be the date of shipment unless the bill of lading contains an on board notation indicating the date of shipment, in which case the date stated in the on board notation will be deemed to be the date of shipment.",
+   "② For the purpose of this article, transhipment means unloading from one vessel and reloading to another vessel during the carriage from the port of loading to the port of discharge stated in the credit.",
+   "③ A bill of lading may indicate that the goods will or may be transhipped provided that the entire carriage is covered by one and the same bill of lading.",
+   "④ A bill of lading indicating that transhipment will or may take place is acceptable, even if the credit prohibits transhipment, if the goods have been shipped in a container, trailer or LASH barge as evidenced by the bill of lading.",
+   "⑤ Clauses in a bill of lading stating that the carrier reserves the right to tranship will not be disregarded."
+  ],
+  "ans": 5,
+  "why": ""
+ },
+ "38-63": {
+  "q": "IncotermsⓇ 2020 소개문(Introduction) 일부이다. 올바른 사용법에 관한 내용으로 옳지 않은 것은?",
+  "passage": "",
+  "opts": [
+   "① The four so-called \"maritime\" IncotermsⓇ rules are intended for use where the seller places the goods on board (or in FAS alongside) a vessel at a sea or river port.",
+   "② An FOB inland point(for example an airport or a warehouse) sale contract makes little sense.",
+   "③ A CIF named sea port sale contract where the buyer expects the goods to be brought to an inland point in the buyer's country makes little sense.",
+   "④ The initials used in the IncotermsⓇ rules are doubtless handy abbreviations for the formula used in the calculation of the price.",
+   "⑤ IncotermsⓇ rules are exclusively, or even primarily, price indicators."
+  ],
+  "ans": 5,
+  "why": ""
+ },
+ "38-64": {
+  "q": "화환신용장통일규칙(UCP 600) 제26조 및 제27조에 관한 내용으로 옳은 것은?",
+  "passage": "",
+  "opts": [
+   "① A transport document must indicate that the goods are or will be loaded on deck.",
+   "② A transport document bearing a clause such as \"shipper's load and count\" and said by shipper to contain is not acceptable.",
+   "③ A transport document may not bear a reference, by stamp or otherwise, to charges additional to the freight.",
+   "④ A clean transport document is one bearing no clause or notation expressly declaring a defective condition of the goods or their packaging.",
+   "⑤ The word \"clean\" must appear on a transport document, where a credit has a requirement for that transport document to be \"clean on board\"."
+  ],
+  "ans": 4,
+  "why": ""
+ },
+ "38-65": {
+  "q": "IncotermsⓇ 2020에서 FOB 규칙에 관한 내용으로 옳지 않은 것은?",
+  "passage": "",
+  "opts": [
+   "① The risk of loss of or damage to the goods transfers when the goods are on board the vessel, and the buyer bears all costs from that moment onwards.",
+   "② This rule is to be used only for sea or inland waterway transport where the parties intend to deliver the goods by placing the goods on board a vessel.",
+   "③ The FOB rule is appropriate where goods are handed over to the carrier before they are on board the vessel.",
+   "④ Where goods are handed over to a carrier at a container terminal, parties should consider using the FCA rule rather than the FOB rule.",
+   "⑤ FOB requires the seller to clear the goods for export, where applicable."
+  ],
+  "ans": 3,
+  "why": ""
+ },
+ "38-66": {
+  "q": "화환신용장통일규칙(UCP 600) 제7조 및 제13조에 관한 내용으로 옳지 않은 것은?",
+  "passage": "",
+  "opts": [
+   "① An issuing bank is not relieved of any of its obligations to provide reimbursement if reimbursement is not made by a reimbursing bank on first demand.",
+   "② An issuing bank will be responsible for any loss of interest, together with any expenses incurred, if reimbursement is not provided on first demand by a reimbursing bank in accordance with the terms and conditions of the credit.",
+   "③ An issuing bank undertakes to reimburse a nominated bank that has honoured or negotiated a complying presentation and forwarded the documents to the issuing bank.",
+   "④ Reimbursement for the amount of a complying presentation under a credit available by acceptance or deferred payment is due at maturity, whether or not the nominated bank prepaid or purchased before maturity.",
+   "⑤ An issuing bank's undertaking to reimburse a nominated bank is dependent on the issuing bank's undertaking to the beneficiary."
+  ],
+  "ans": 5,
+  "why": ""
+ },
+ "38-67": {
+  "q": "영국물품매매법 (Sale of Goods Act, 1979)에 관한 내용으로 옳지 않은 것은?",
+  "passage": "",
+  "opts": [
+   "① Where by a contract of sale the seller purports to effect a present sale of existing goods, the contract operates as an agreement to sell the goods.",
+   "② Where there is a contract for the sale of specific goods, and the goods without the knowledge of the seller have perished at the time when the contract is made, the contract is void.",
+   "③ The price in a contract of sale may be fixed by the contract, or may be left to be fixed in a manner agreed by the contract, or may be determined by the course of dealing between the parties.",
+   "④ Where there is an agreement to sell goods on the terms that the price is to be fixed by the valuation of a third party, and he cannot or does not make the valuation, the agreement is avoided.",
+   "⑤ Where the third party is prevented from making the valuation by the fault of the seller or buyer, the party not at fault may maintain an action for damages against the party at fault."
+  ],
+  "ans": 1,
+  "why": ""
+ },
+ "38-68": {
+  "q": "국제물품복합운송에 관한 유엔협약(MT조약, 1980) 제34조에 관한 내용으로 옳지 않은 것은?",
+  "passage": "",
+  "opts": [
+   "① This Convention shall be open for signature as from 1 September 1980 until and including 31 August 1981 at the Headquarters of the United Nations in New York.",
+   "② All States are entitled to become Parties to this Convention by signature not subject to ratification, acceptance or approval.",
+   "③ After 31 August 1981, this Convention shall be open for accession by all States which are not signatory States.",
+   "④ All States are entitled to become Parties to this Convention by signature subject to and followed by ratification, acceptance or approval.",
+   "⑤ Instruments of ratification, acceptance, approval and accession are to be deposited with the Secretary-General of the WTO."
+  ],
+  "ans": 5,
+  "why": ""
+ },
+ "38-69": {
+  "q": "선하증권에 관한 법규의 통일을 위한 국제협약(Hague Rules, 1924) 제5조에 관한 내용이다. ( )에 들어갈 용어를 순서대로 바르게 나열한 것은?",
+  "passage": "A ( ) shall be at liberty to surrender in whole or in part all or any of his rights and immunities or to increase any of his responsibilities and obligations under this Convention, provided such surrender or increase shall be ( ) in the bill of lading issued to the ( ).",
+  "opts": [
+   "① carrier - embodied - carrier",
+   "② carrier - embodied - shipper",
+   "③ carrier - excluded - shipper",
+   "④ shipper - embodied - shipper",
+   "⑤ shipper - excluded - carrier"
+  ],
+  "ans": 2,
+  "why": ""
+ },
+ "38-70": {
+  "q": "국제비즈니스계약서 내용의 일부이다. 이 조항에 해당하는 것은?",
+  "passage": "Without the prior written consent of the Principal, the Agent shall not manufacture, represent, purchase, sell, advertise or otherwise deal with products similar to, identical with or sold for similar application as the Products during the life of this Agreement.",
+  "opts": [
+   "① Entire Agreement Clause",
+   "② Performance of Guarantee Clause",
+   "③ Whereas Clause",
+   "④ Consideration Clause",
+   "⑤ Non-competition Clause"
+  ],
+  "ans": 5,
+  "why": ""
+ },
+ "38-71": {
+  "q": "IncotermsⓇ 2020에서 DDP 규칙에 관한 내용으로 옳지 않은 것은?",
+  "passage": "",
+  "opts": [
+   "① The seller bears all risks involved in bringing the goods to the named place of destination or to the agreed point within that place.",
+   "② DDP is the IncotermsⓇ rule imposing on the seller the maximum level of obligation of all eleven IncotermsⓇ rules.",
+   "③ The reference to \"procure\" here caters for multiple sales down a chain (string sales), particularly common in the commodity trades.",
+   "④ If the seller incurs costs under its contract of carriage related to unloading at the place of delivery/destination, the seller is entitled to recover such costs separately from the buyer unless otherwise agreed between the parties.",
+   "⑤ This rule may be used irrespective of the mode of transport selected and may also be used where more than one mode of transport is employed."
+  ],
+  "ans": 4,
+  "why": ""
+ },
+ "38-72": {
+  "q": "화환신용장통일규칙(UCP 600) 제24조에 관한 내용으로 옳은 것은?",
+  "passage": "",
+  "opts": [
+   "① A road transport document must appear to be the original for consignor or shipper or bear marking indicating for whom the document has been prepared.",
+   "② A rail transport document marked \"duplicate\" will not be accepted as an original.",
+   "③ A rail or inland waterway transport document will not be accepted as an original whether marked as an original or not.",
+   "④ A road, rail or inland waterway transport document may indicate that the goods will not be transhipped provided that the entire carriage is covered by one and the same transport document.",
+   "⑤ A road, rail or inland waterway transport document indicating that transhipment will or may take place is acceptable, even if the credit prohibits transhipment."
+  ],
+  "ans": 5,
+  "why": ""
+ },
+ "38-73": {
+  "q": "ICC 은행간 화환신용장 대금상환에 관한 통일규칙(URR 725) 제3조에 관한 내용이다. ( )에 공통으로 들어갈 용어는?",
+  "passage": "A ( ) is separate from the credit to which it refers, and a reimbursing bank is not concerned with or bound by the terms and conditions of the credit, even if any reference whatsoever to it is included in the ( ).",
+  "opts": [
+   "① reimbursement authorization",
+   "② reimbursement amendment",
+   "③ reimbursement claim",
+   "④ reimbursement undertaking",
+   "⑤ reimbursement undertaking amendment"
+  ],
+  "ans": 1,
+  "why": ""
+ },
+ "38-74": {
+  "q": "무역거래단계에서 사용되는 표현으로 그 성격이 나머지와 다른 것은?",
+  "passage": "",
+  "opts": [
+   "① We have been doing business with ABC Company for the last five years and the company has never failed to meet their payment obligations with promptness.",
+   "② As the company's financial status is sound and their payment has been completely satisfactory, we believe that the company is reliable.",
+   "③ We are interested in your products developed for export lately and we would like to place an order with you.",
+   "④ On the basis of our experience of doing business with ABC Company, we believe them to be creditworthy.",
+   "⑤ We believe that the company has accumulated a business credibility in domestic market."
+  ],
+  "ans": 3,
+  "why": ""
+ },
+ "38-75": {
+  "q": "ICC 은행간 화환신용장 대금상환에 관한 통일규칙(URR 725) 제16조에 관한 내용으로 옳은 것은?",
+  "passage": "",
+  "opts": [
+   "① A reimbursing bank's charges are for the account of the claiming bank.",
+   "② When honouring a reimbursement claim, a reimbursing bank is obligated to follow the instructions regarding any charges contained in the reimbursement authorization.",
+   "③ If a reimbursement authorization states that the reimbursing bank's charges are for the account of the applicant, they shall be deducted from the amount due to a claiming bank when reimbursement is made.",
+   "④ All charges paid by the reimbursing bank will not be in addition to the amount of the authorization, provided that the claiming bank indicates the amount of such charges.",
+   "⑤ If the issuing bank fails to provide the reimbursing bank with instructions regarding charges, all charges shall be for the account of the reimbursing bank."
+  ],
+  "ans": 2,
+  "why": ""
+ },
+ "38-76": {
+  "q": "영국물품매매법 (Sale of Goods Act, 1979) 제45조에 관한 내용으로 옳지 않은 것을 모두 고른 것은?",
+  "passage": "ㄱ. If the goods are rejected by the buyer, and the carrier or other bailee or custodier continues in possession of them, the transit is not deemed to be at an end, even if the seller has refused to receive them back.\nㄴ. When goods are delivered to a ship chartered by the seller it is a question depending on the circumstances of the particular case whether they are in the possession of the master as a carrier or as agent to the seller.\nㄷ. Even if the carrier or other bailee or custodier wrongfully refuses to deliver the goods to the buyer or his agent in that behalf, the transit is not deemed to be at an end.",
+  "opts": [
+   "① ㄱ",
+   "② ㄴ",
+   "③ ㄱ,ㄴ",
+   "④ ㄴ,ㄷ",
+   "⑤ ㄱ,ㄴ,ㄷ"
+  ],
+  "ans": 4,
+  "why": ""
+ },
+ "38-77": {
+  "q": "추심에 관한 통일규칙 (URC 522) 제3조에 관한 내용이다. ( )에 들어갈 용어를 순서대로 바르게 나열한 것은?",
+  "passage": "O The \"( )\" who is the party entrusting the handling of a collection to a bank.\nO The \"( )\" which is the bank to which the principal has entrusted the handling of a collection.\nO The \"( )\" which is any bank, other than the remitting bank, involved in processing the collection.\nO The \"( )\" is the one to whom presentation is to be made in accordance with the collection instruction.",
+  "opts": [
+   "① principal - remitting bank - collecting bank - drawee",
+   "② principal - remitting bank - presenting bank - drawee",
+   "③ principal - collecting bank - presenting bank - drawee",
+   "④ drawee - remitting bank - collecting bank - principal",
+   "⑤ drawee - collecting bank - presenting bank - principal"
+  ],
+  "ans": 1,
+  "why": ""
+ },
+ "38-78": {
+  "q": "전자적 제시를 위한 UCP 추록(eUCP Version 2.0) 제e6조에 관한 내용으로 옳지 않은 것은?",
+  "passage": "",
+  "opts": [
+   "① The receipt of the notice of completeness will act as notification that the presentation is complete and that the period for examination of the presentation is to commence.",
+   "② Presentation is deemed not to have been made if the notice of completeness is not received.",
+   "③ Each presentation of an electronic record under an eUCP credit must not identify the eUCP credit under which it is presented.",
+   "④ Any presentation of an electronic record not so identified may be treated as not received.",
+   "⑤ An electronic record that cannot be authenticated is deemed not to have been presented."
+  ],
+  "ans": 3,
+  "why": ""
+ },
+ "38-79": {
+  "q": "IncotermsⓇ 2020 소개문(Introduction) 일부이다. 옳은 것은 모두 몇 개 인가?",
+  "passage": "○ The IncotermsⓇ rules do NOT deal with the imposition of tariffs.\n○ The IncotermsⓇ rules do NOT deal with export or import prohibitions.\n○ The IncotermsⓇ rules do NOT deal with whether there is a contract of sale at all.\n○ The IncotermsⓇ rules do NOT deal with the time, place, method or currency of payment of the price.\n○ Neither do the IncotermsⓇ rules provide the law applicable to the contract.\n○ The IncotermsⓇ rules describe Obligations: Who does what as between seller and buyer.\n○ The IncotermsⓇ rules describe Risk: Where and when the seller \"delivers\" the goods, in other words where risk transfers from seller to buyer.",
+  "opts": [
+   "① 3개",
+   "② 4개",
+   "③ 5개",
+   "④ 6개",
+   "⑤ 7개"
+  ],
+  "ans": 5,
+  "why": ""
+ },
+ "38-80": {
+  "q": "IncotermsⓇ 2020 소개문(Introduction)에 관한 설명으로 옳지 않은 것은?",
+  "passage": "",
+  "opts": [
+   "① A CPT contract with an unclear named destination will leave both parties in doubt as to the point to which the seller must contract and pay for the transport of the goods.",
+   "② In CPT, delivery happens at the buyer's end when the goods are handed over the carrier contracted by the buyer.",
+   "③ In the F group, risk transfers at the seller's end of the main carriage such that the seller will have performed its obligation to deliver the goods.",
+   "④ Provision has been made in the IncotermsⓇ 2020 rules for a seller under the D rules either to contract for carriage or to arrange for carriage, that is to say through its own means of transport.",
+   "⑤ What the IncotermsⓇ rules say about carriage or transport documents (in A4/B4 and A6/B6), or what they say about insurance cover(A5/B5), does not bind the carrier or the insurer or any of the banks involved."
+  ],
+  "ans": 2,
+  "why": ""
+ },
  "39-41": {
   "q": "국제물품매매계약에 관한 유엔협약(CISG, 1980) 제19조의 일부이다. ( )에 공 통으로 들어갈 용어는?",
   "passage": "○ A reply to an offer which purports to be an acceptance but contains additional or different terms which do not ( ) alter the terms of the offer constitutes an acceptance, unless the offeror, without undue delay, objects orally to the discrepancy or dispatches a notice to that effect.\n○ Additional or different terms relating, among other things, to the price, payment, quality and quantity of the goods, place and time of delivery, extent of one party’s liability to the other or the settlement of disputes are considered to alter the terms of the offer ( ).",

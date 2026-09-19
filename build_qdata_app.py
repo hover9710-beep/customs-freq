@@ -29,6 +29,11 @@ EXPECTED = {
 def paras(path):
     return [p.text.strip() for p in Document(path).paragraphs if p.text.strip()]
 
+def read_lines(p):
+    if p.endswith('.txt'):
+        return [l.rstrip('\n') for l in open(p, encoding='utf-8') if l.strip()]
+    return paras(p)
+
 def core_from(lines):
     hdr = re.compile(r'^(?:문\s*)?(\d{2})\\?\.\s*(.*)$')
     idx = [(i, int(m.group(1)), m.group(2).strip())
@@ -76,7 +81,7 @@ def why_from(path):
     return why
 
 def find(rnd, ohap):
-    for f in sorted(glob.glob(os.path.join(SRC, "*.docx"))):
+    for f in sorted(glob.glob(os.path.join(SRC, "*.docx")) + glob.glob(os.path.join(SRC, "*.txt"))):
         n = os.path.basename(f)
         is_o = ('오답이유' in n) or ('HAESUL' in n)
         if is_o != ohap:
@@ -90,7 +95,7 @@ for rnd in range(28, 44):
     ft = find(rnd, False)
     if not ft:
         continue                      # docx 없으면 건너뜀(31·38 등)
-    core = core_from(paras(ft))
+    core = core_from(read_lines(ft))
     op = find(rnd, True)
     why = why_from(op) if op else {}
     got = [core.get(n, {}).get('ans') for n in range(41, 81)]
