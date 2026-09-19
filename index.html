@@ -43,7 +43,9 @@ li.hasq .qpanel{cursor:auto}
 @media(prefers-color-scheme:dark){.qno{color:#7fa8d6}}
 .qq{font-weight:700;margin-bottom:6px}
 .qpas{white-space:pre-line;font-size:13px;border-left:3px solid var(--line);padding:4px 8px;margin-bottom:6px;color:inherit;opacity:.9}
-.qopt{padding:4px 8px;border-radius:6px;margin:2px 0;font-size:13px}
+.qopt{padding:4px 8px;border-radius:6px;margin:2px 0;font-size:13px;border:1px solid transparent}
+.qopt.wrong{border-color:#A31821;color:#A31821;background:rgba(163,24,33,.08)}
+.qretry{font-size:13px;color:var(--gray);margin-top:6px;text-align:right}
 .qopt.ans{background:#e3f4e8;color:#1e6b36;font-weight:700;border:1px solid #9fd3ae}
 @media(prefers-color-scheme:dark){.qopt.ans{background:#173a24;color:#8fe0a8;border-color:#2c6b41}}
 .qwhy{margin-top:6px}
@@ -96,12 +98,32 @@ function qPanel(keys){
  const p=el('div','qpanel');
  for(const id of keys){const x=QD[id];if(!x)continue;
   const [r,n]=id.split('-');const c=el('div','qcard');
-  c.appendChild(el('div','qno',`제${r}회 ${n}번 · 정답 ${'①②③④⑤'[x.ans-1]||'?'}`));
+  c.appendChild(el('div','qno',`제${r}회 ${n}번`));
   c.appendChild(el('div','qq',x.q));
   if(x.passage)c.appendChild(el('div','qpas',x.passage));
-  x.opts.forEach((o,i)=>c.appendChild(el('div','qopt'+(i+1===x.ans?' ans':''),o)));
-  if(x.why){const w=el('details','qwhy');w.appendChild(el('summary',null,'오답 이유'));w.appendChild(el('div',null,x.why));c.appendChild(w)}
-  else c.appendChild(el('div','qnone','▸ 오답 이유: 해설 준비중'));
+  // 판정형: 선지를 눌러야 정답(초록)·오답(진홍)·오답이유 공개, '다시 풀기'로 리셋
+  const ansArr=Array.isArray(x.ans)?x.ans:[x.ans];
+  let answered=false;
+  const whyBox=x.why
+   ?(()=>{const w=el('details','qwhy');w.appendChild(el('summary',null,'오답 이유'));w.appendChild(el('div',null,x.why));return w})()
+   :el('div','qnone','▸ 오답 이유: 해설 준비중');
+  whyBox.style.display='none';
+  const optEls=x.opts.map((o,i)=>{
+   const oe=el('div','qopt',o);oe.style.cursor='pointer';
+   oe.addEventListener('click',ev=>{
+    ev.stopPropagation();if(answered)return;answered=true;
+    optEls.forEach((e2,j)=>{if(ansArr.includes(j+1))e2.classList.add('ans')});
+    if(!ansArr.includes(i+1))oe.classList.add('wrong');
+    whyBox.style.display='';
+    const rb=el('div','qretry','↺ 다시 풀기');rb.style.cursor='pointer';
+    rb.addEventListener('click',e3=>{e3.stopPropagation();answered=false;
+     optEls.forEach(e2=>e2.classList.remove('ans','wrong'));whyBox.style.display='none';rb.remove()});
+    c.appendChild(rb);
+   });
+   return oe;
+  });
+  optEls.forEach(oe=>c.appendChild(oe));
+  c.appendChild(whyBox);
   p.appendChild(c)}
  const miss=keys.filter(id=>!QD[id]);
  if(miss.length)p.appendChild(el('div','qnone','원문 미수록 회차: '+miss.join(', ')));
