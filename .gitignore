@@ -1,0 +1,6 @@
+src_docx/
+*.docx
+index.html.bak
+build_qdata_43.py
+qdata_43.json
+__pycache__/
