@@ -112,7 +112,9 @@ function qPanel(keys){
   // 판정형: 선지를 눌러야 정답(초록)·오답(진홍)·오답이유 공개, '다시 풀기'로 리셋
   const ansArr=Array.isArray(x.ans)?x.ans:[x.ans];
   let answered=false;
-  const oxTxt=x.ox&&Object.keys(x.ox).length?Object.keys(x.ox).sort().map(i=>'①②③④⑤'[i-1]+' '+x.ox[i]).join('   '):'';
+  // 관세법 은행의 간이해설: 선지별 O/X(ox) + 조합형 보기별 O/X(oxb)
+  const oxLine=(o,fmt)=>o&&Object.keys(o).length?Object.keys(o).sort().map(k=>fmt(k)+' '+o[k]).join('   '):'';
+  const oxTxt=[oxLine(x.oxb,k=>k),oxLine(x.ox,i=>'①②③④⑤'[i-1])].filter(Boolean).join('\n');
   const whyBox=x.why
    ?(()=>{const w=el('div','qwhy');w.appendChild(el('div','qwt','오답 이유'));w.appendChild(el('div','qwb',x.why));return w})()
    :oxTxt

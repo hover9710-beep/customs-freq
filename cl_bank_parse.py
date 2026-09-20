@@ -27,7 +27,7 @@ def parse_file(path, rnd):
             ans_raw = r[9].strip()
             ox = r[10].strip()
             key = f"{rnd}-{num}"
-            e = q.setdefault(key, {'q':'', 'bogi':[], 'opts':{}, 'ans':None, 'ox':{}})
+            e = q.setdefault(key, {'q':'', 'bogi':[], 'opts':{}, 'ans':None, 'ox':{}, 'oxb':{}})
             if moon and not e['q']:
                 e['q'] = moon
             if ans_raw and e['ans'] is None:
@@ -38,8 +38,10 @@ def parse_file(path, rnd):
                 if ox in ('O', 'X'):
                     e['ox'][CIRC[sym]] = ox
             elif re.match(r'^[ㄱ-ㅎ]$', sym):
-                # 조합형 보기 ㄱㄴㄷ -> passage
+                # 조합형 보기 ㄱㄴㄷ -> passage, 보기별 O/X -> oxb
                 e['bogi'].append(f"{sym}. {jimun}")
+                if ox in ('O', 'X'):
+                    e['oxb'][sym] = ox
     out = {}
     for key, e in q.items():
         opts = [e['opts'].get(i, '') for i in range(1, 6)]
@@ -49,7 +51,7 @@ def parse_file(path, rnd):
             if m:
                 ans = m[0] if len(m) == 1 else sorted(set(m))
         out[key] = {'q': e['q'], 'passage': '\n'.join(e['bogi']),
-                    'opts': opts, 'ans': ans, 'ox': e['ox']}
+                    'opts': opts, 'ans': ans, 'ox': e['ox'], 'oxb': e['oxb']}
     return out
 
 def rnd_from_name(fn):
